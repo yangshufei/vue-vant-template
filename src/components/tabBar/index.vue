@@ -1,8 +1,7 @@
 <template>
   <van-tabbar v-model="active" class="vant__tabbar">
-    <van-tabbar-item v-for="item in tabbar" :key="item.id" :to="item.path">
-      <span>{{item.name}}</span>
-      <van-icon slot="icon" :name="item.icon"></van-icon>
+    <van-tabbar-item v-for="item in tabbar" :key="item.id" :to="item.path" :icon="item.icon">
+      {{item.name}}
     </van-tabbar-item>
   </van-tabbar>
 </template>
