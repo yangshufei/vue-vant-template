@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="user">
     <tabBar />
   </div>
 </template>
@@ -8,7 +8,7 @@
 
 import tabBar from '@/components/tabBar/index'
 export default {
-  name: 'Home',
+  name: 'User',
   components: {
     tabBar
   }
