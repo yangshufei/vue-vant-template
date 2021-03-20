@@ -1,6 +1,10 @@
 <template>
   <div class="home">
-    <h4>11</h4>
+    <h4>A页面</h4>
+    <van-cell-group>
+      <van-cell title="单元格" value="内容" />
+      <van-cell title="单元格" value="内容" label="描述信息" />
+    </van-cell-group>
     <tabBar />
   </div>
 </template>
@@ -9,10 +13,13 @@
 import tabBar from '@/components/tabBar/index'
 // 接口
 import { getHomeData } from '@/api/home'
+import { Cell, CellGroup } from 'vant'
 export default {
   name: 'Home',
   components: {
-    tabBar
+    tabBar,
+    [CellGroup.name]: CellGroup,
+    [Cell.name]: Cell
   },
   methods: {
     async getData () {
@@ -28,7 +35,8 @@ export default {
 
 <style lang="scss" scoped>
   .home {
-    height: 100%;
-    background: pink;
+    h4 {
+      text-align: center;
+    }
   }
 </style>

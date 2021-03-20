@@ -1,3 +1,4 @@
+import './styles/index.scss'
 import 'amfe-flexible/index.js'
 import Vue from 'vue'
 import App from './App.vue'
