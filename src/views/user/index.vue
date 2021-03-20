@@ -14,3 +14,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .user {
+    height: 100vh;
+    background: rgb(110, 228, 236);
+  }
+</style>

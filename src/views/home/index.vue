@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="box"></div>
+    <h4>11</h4>
     <tabBar />
   </div>
 </template>
@@ -28,10 +28,7 @@ export default {
 
 <style lang="scss" scoped>
   .home {
-    .box {
-      width: 375px;
-      height: 100vh;
-      background: pink;
-    }
+    height: 100%;
+    background: pink;
   }
 </style>
