@@ -28,6 +28,14 @@ const routes = [
     meta: {
       title: '我的'
     }
+  },
+  {
+    path: '/detail',
+    name: 'Detail',
+    component: () => import('../views/detail/index.vue'),
+    meta: {
+      title: '详情'
+    }
   }
 ]
 
